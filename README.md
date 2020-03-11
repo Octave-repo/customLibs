@@ -1,3 +1,5 @@
-These some of my customs library.
+# CUSTOM LIBRARY
 
-    slinkedlib : Library used to manipulate linked lists.  
+## slinkedlib
+
+This library is used to manipulate linked lists.
