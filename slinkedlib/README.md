@@ -85,7 +85,7 @@ Liste create(int n, float nf)
     
     return new;
 }
-``̀ 
+```
 
 This function create a new list.
 
