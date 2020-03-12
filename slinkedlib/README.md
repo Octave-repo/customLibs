@@ -58,3 +58,52 @@ It contains two elements :
     - Returns the first index where the element 'a' in the list 'l' is found using the 'compar' function.
     - The function will return -1 if no matching element are found.
     - The 'compar' must return 0 if the elements are matching.
+
+# EXEMPLE
+
+## Here are some exemples on the additionals fucntions you might want to add.
+
+```c
+typedef
+{
+    int i;
+    float f;
+} Data;
+``̀
+
+A small structure that will be used in the exemple, you will be able to stock an int and a float inside the list.
+
+```c
+Liste create(int n, float nf)
+{
+    Liste new;
+    new = malloc(sizeof(Liste));
+    new->o = malloc(sizeof(Data));
+
+    ((Data *) new->o)->i = n;
+    ((Data *) new->o)->f = nf;
+    
+    return new;
+}
+``̀
+
+This function create a new list.
+
+```c
+int compar(Liste a, Liste b)
+{
+    return ((Data *) a->o)->i == ((Data *) b->o)->i ? ((Data *) a->o)->i - ((Data *) b->o)->i : ((Data *) a->o)->f - ((Data *) b->o)->f;  
+}
+```
+
+This function is an exemple of a function that can be used as a comparaison function for the `sSortedInsert`,  `sFind` `sFindIndex`.
+It sorts by highest integer and if both integers are equal, it sorts by higher float.
+
+```c
+void printListe(Liste l)
+{
+    printf("%d %f\n, ((Data *) new->o)->i, ((Data *) new->o)->f);
+}
+```
+
+This function can be used for the `void sPrintLinked`.
