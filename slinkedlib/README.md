@@ -69,7 +69,7 @@ typedef
     int i;
     float f;
 } Data;
-``̀ 
+```
 
 A small structure that will be used in the exemple, you will be able to stock an int and a float inside the list.
 
