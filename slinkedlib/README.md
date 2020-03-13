@@ -1,4 +1,4 @@
-# TYPES
+# __TYPES__
 
 ## The type *Liste* is the basic type used for this library.
 
@@ -7,7 +7,7 @@ It contains two elements :
  - _void *o_ this the datas you want to put in you list.
 
 
-# FUNCTIONS
+# __FUNCTIONS__
 
 ## This is how each functions of the library works
 
@@ -59,7 +59,7 @@ It contains two elements :
     - The function will return -1 if no matching element are found.
     - The 'compar' must return 0 if the elements are matching.
 
-# EXEMPLE
+# __EXEMPLE__
 
 ## Here are some exemples on the additionals fucntions you might want to add.
 
